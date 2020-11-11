@@ -1,5 +1,5 @@
 jenkins:
-  systemMessage: 'Jenkins configured using CloudBees CI CasC - v2'
+  systemMessage: 'Jenkins configured using CloudBees CI CasC - v3'
 unclassified:
   hibernationConfiguration:
     activities:
@@ -70,3 +70,14 @@ credentials:
           id: "cloudbees-ci-workshop-github-app"
           owner: "cloudbees-ci-paul-rupe-sp"
           privateKey: "${gitHubAppPrivateKey}"
+cloudbees-slack-integration:
+  config:
+    slackToken: "${slackToken}"
+    slackWorkspace: "T010A455W77"
+    users:
+    - id: "Paul-Rupe-sp"
+      jenkins: "Paul-Rupe-sp"
+      optedIn: true
+      scmId: "Paul-Rupe-sp"
+      slack: "Paul.Rupe@sailpoint.com"
+      slackWorkspace: "T010A455W77"
